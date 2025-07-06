@@ -8,7 +8,11 @@ def train_and_evaluate(X_train, X_test, y_train, y_test):
     grid.fit(X_train, y_train)
     print("Best parameters:", grid.best_params_)
     clf = grid.best_estimator_
-    y_pred = clf.predict(X_test)
+    
+    # TODO: Use the trained model 'clf' to predict the labels for X_test
+    y_pred =
+    
     acc = accuracy_score(y_test, y_pred)
     print(f"Test accuracy: {acc:.2f}")
     return clf
+
