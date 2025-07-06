@@ -60,24 +60,29 @@ python collect_data.py
 ```
 Run this once or whenever you want fresh data:
 
-3. Prepare the data
-This step resizes all images to a fixed size and saves them in a format the model can use:
+3. Complete the TODO in text cleaning
+Open utils/data_preprocessing.py, then:
+ - Implement the clean_text function to:
+ - Convert text to lowercase
+ - Remove punctuation
+ - Remove stopwords (using NLTK)
+
+4. Complete the TODOs in data preparation
+
+5. Complete the TODO in model training
+
+In utils/model.py, complete the train_and_evaluate function, especially the line to predict labels on the test set
+
+6. Run the main training and prediction script:
+
 ```bash
 python main.py
 ```
-The script also trains and evaluates your model.
 
-4. Complete the TODOs in train_model_student.py, then run the following to train your model:
-```bash
-python train_model_student.py
-```
-This script will process the images and train a model called object_detector.h5.
+This will prepare data, train the model, and open an interactive prompt
 
-5. Run real-time prediction!
-```bash
-python predict_webcam.py
-```
-Try holding up different objects in front of the webcam. The program will tell you what it sees!
+ - Enter custom text to get live sentiment predictions
+ - Type q to quit
 
 ## Clean-Up Tip
 If the model isn't working well, consider:
