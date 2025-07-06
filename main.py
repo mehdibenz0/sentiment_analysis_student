@@ -4,7 +4,9 @@ from utils.predict import predict_sentiment
 
 if __name__ == "__main__":
     X_train, X_test, y_train, y_test, vectorizer = prepare_data()
-    model = train_and_evaluate(X_train, X_test, y_train, y_test)
+    
+    # TODO: Train the model using train_and_evaluate and save it in 'model'
+    model = 
 
     while True:
         text = input("Enter text to predict sentiment (or 'q' to quit): ")
