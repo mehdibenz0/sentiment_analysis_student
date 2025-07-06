@@ -8,11 +8,12 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 def clean_text(text):
-    text = text.lower()
-    text = ''.join([c for c in text if c not in string.punctuation])
-    tokens = text.split()
-    tokens = [w for w in tokens if w not in stopwords.words('english')]
-    return ' '.join(tokens)
+    # TODO: 
+    # 1) convert text to lowercase: text.lower()
+    # 2) remove punctuation (e.g., use string.punctuation)
+    # 3) remove stopwords from nltk.corpus.stopwords.words('english')
+    # 4) return the cleaned text as a single string
+    pass  # Remove this line after implementing
 
 def prepare_data():
     # Load data
